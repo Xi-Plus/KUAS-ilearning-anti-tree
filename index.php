@@ -11,8 +11,9 @@ $post=array(
 	"username" => $cfg['username'],
 	"login_key" => $login_key
 );
-for ($i=1; $i <= $cfg['times']; $i++) { 
+for ($i=1; $i <= $cfg['times']; $i++) {
+	set_time_limit($cfg['set_time_limit']);
 	$res=cURL_HTTP_Request("http://ilearning.kuas.edu.tw/login.php",$post,$cfg['headers']);
 	echo "login ".$i."/".$cfg['times']."\n";
-	usleep($cfg['sleep']);
+	usleep($cfg['sleep']*1000);
 }
