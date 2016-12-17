@@ -11,10 +11,9 @@
  6. 開發人員有權隨時修正此免責聲明。
 
 ## 使用方法
-1. 下載本程式，你必須有```PHP```及```cURL```
+1. 下載本程式，你必須有```cURL```
 2. 設定```config.php```
- * ```username```為目標帳號
+ * ```cURL```為執行命令，可使用Chrome主控台，打開`Network`頁籤，在`login.php`上按右鍵，點選`Copy`>`Copy as cURL (bash)`
  * ```times```為執行次數
  * ```sleep```為發送兩次請求之間的暫停時間(毫秒)
- * ```headers```為HTTP請求的頭欄位，此項目可不修改。
 1. 執行```index.php```
